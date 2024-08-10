@@ -1,23 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Greet } from "./components/Greet";
+import { Person } from "./components/Person";
+import { Status } from "./components/Status";
+import { Heading } from "./components/Heading";
+import { Oscar } from "./components/Oscar";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
+import Container from "./components/Container";
 
 function App() {
+  // const personName = {
+  //   firstName: "Bruce",
+  //   lastName: "Wayne",
+  // };
+
+  // const nameList = [
+  //   {
+  //     firstName: "Bruce",
+  //     lastName: "Wayne",
+  //   },
+  //   {
+  //     firstName: "Clark",
+  //     lastName: "Kent",
+  //   },
+  //   {
+  //     firstName: "Princess",
+  //     lastName: "Diana",
+  //   },
+  // ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      {/* <Button
+        handleClick={(event, id) => {
+          console.log("Button clicked", event, 1);
+        }}
+      />
+      <Input value="" handleChange={(event) => console.log(event)} /> */}
+      {/* <Status Status="loading" />
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Lenonardo Dicpario!</Heading>
+      </Oscar>
+      <Greet name="Aman" isLoggedIn={false} /> */}
+      {/* <Greet name={10} messageCount={20} isLoggedIn={false} />
+      <Person name={personName} />
+      <Person name={nameList} /> */}
     </div>
   );
 }
